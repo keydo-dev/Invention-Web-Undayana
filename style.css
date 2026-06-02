@@ -8,7 +8,7 @@
 body {
   width: 100%;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .hero {
   width: 100%;
@@ -24,13 +24,13 @@ body {
   font-family: Helvetica;
 }
 
-.nav-item ul li a:hover{
+.nav-item ul li a:hover {
   color: #ff6347;
   transform: scale(1.1);
   font-size: 18px;
   font-weight: 700;
 }
-.nav-items ul li a:hover{
+.nav-items ul li a:hover {
   color: #ff6347;
   transform: scale(1.1);
   font-size: 18px;
@@ -52,18 +52,18 @@ body {
   display: inline;
   margin: 15px;
 }
-.nav-item ul li :hover{
+.nav-item ul li :hover {
   transition: 0.3s;
   font-size: larger;
   text-decoration: underline;
 }
 .nav-item ul li a {
   text-decoration: none;
-  color: #EDE9CE;
+  color: #ede9ce;
   font-weight: 600;
 }
 .area-logo {
-  color: #EDE9CE;
+  color: #ede9ce;
   width: 20%;
   height: 100%;
   font-size: 25px;
@@ -85,14 +85,14 @@ body {
   display: inline;
   margin: 15px;
 }
-.nav-items ul li :hover{
+.nav-items ul li :hover {
   transition: 0.3s;
   font-size: larger;
   text-decoration: underline;
 }
 .nav-items ul li a {
   text-decoration: none;
-  color: #EDE9CE;
+  color: #ede9ce;
   font-weight: 600;
 }
 .nav-visit ul {
@@ -101,14 +101,14 @@ body {
 .nav-visit ul li {
   margin-left: 30px;
 }
-.nav-visit ul li :hover{
+.nav-visit ul li :hover {
   transition: 0.3s;
   font-size: larger;
   text-decoration: underline;
 }
 .nav-visit ul li a {
   text-decoration: none;
-  color: #EDE9CE;
+  color: #ede9ce;
   font-weight: 650;
 }
 .area-header {
@@ -117,7 +117,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 15%;
-  color: #EDE9CE;
+  color: #ede9ce;
 }
 .sub-header {
   font-size: 18px;
@@ -136,13 +136,13 @@ body {
   text-decoration: none;
   border-radius: 45px;
   color: #3f3d30;
-  background-color: #EDE9CE;
+  background-color: #ede9ce;
   font-family: Helvetica;
   font-weight: 600;
   font-size: large;
   transition: 0.3s ease-in;
 }
-.btn-more:hover{
+.btn-more:hover {
   transform: translateY(-5px);
   opacity: 60%;
   color: #000000;
@@ -206,24 +206,24 @@ body {
   transition: all 1.1s;
   transform: scale(1.1);
 }
-.container-item{
+.container-item {
   width: 100%;
   height: 390vh;
   display: flex;
   justify-content: center;
-  background-color: #F6F6EC
+  background-color: #f6f6ec;
 }
-.contain-list{
+.contain-list {
   margin-top: 5rem;
   width: 95%;
   height: 100vh;
 }
 /*Section Exhibition*/
-.exhibitions{
+.exhibitions {
   width: 100%;
   height: auto;
 }
-.title-area{
+.title-area {
   width: 100%;
   height: 10%;
   display: flex;
@@ -231,7 +231,7 @@ body {
   align-items: center;
   border-bottom: 3px solid #000000;
 }
-.text-title1{
+.text-title1 {
   width: 97%;
   height: 100%;
   font-size: x-large;
@@ -240,7 +240,7 @@ body {
   align-items: center;
   margin-bottom: 1rem;
 }
-.text-title2{
+.text-title2 {
   width: 3%;
   height: 100%;
   display: flex;
@@ -249,60 +249,60 @@ body {
   font-size: 35px;
   margin-bottom: 1rem;
 }
-.exhibition-list{
+.exhibition-list {
   width: 100%;
   height: 100%;
 }
-.exhibition-item1{
+.exhibition-item1 {
   width: 100%;
   height: 40%;
   margin-top: 25px;
   display: flex;
-  border-bottom: 1px solid #BEBEBE;
+  border-bottom: 1px solid #bebebe;
 }
-.exhibition-image1{
+.exhibition-image1 {
   width: 35%;
 }
-.exhibition-image1 img{
+.exhibition-image1 img {
   width: 93%;
 }
-.exhibition-content1{
+.exhibition-content1 {
   width: 28%;
 }
-.exhibition-item2{
+.exhibition-item2 {
   width: 100%;
   height: 40%;
   margin-top: 25px;
   display: flex;
-  border-bottom: 1px solid #BEBEBE;
+  border-bottom: 1px solid #bebebe;
 }
-.exhibition-image2{
+.exhibition-image2 {
   width: 35%;
 }
-.exhibition-image2 img{
+.exhibition-image2 img {
   width: 93%;
 }
-.exhibition-content2{
+.exhibition-content2 {
   width: 28%;
 }
-.exhibition-item3{
+.exhibition-item3 {
   width: 100%;
   height: 40%;
   margin-top: 25px;
   display: flex;
-  border-bottom: 1px solid #BEBEBE;
+  border-bottom: 1px solid #bebebe;
 }
-.exhibition-image3{
+.exhibition-image3 {
   width: 35%;
 }
-.exhibition-image3 img{
+.exhibition-image3 img {
   width: 93%;
 }
-.exhibition-content3{
+.exhibition-content3 {
   width: 28%;
 }
-.button{
-  background-color: #F6F6EC;
+.button {
+  background-color: #f6f6ec;
   color: black;
   text-decoration: none;
   font-weight: 500;
@@ -311,113 +311,112 @@ body {
   border: 2px solid black;
   transition: 0.3s ease-in;
 }
-.button:hover{
+.button:hover {
   transform: translateY(-5px) translateX(-3px);
   background-color: black;
   color: white;
   cursor: pointer;
 }
-.button-load{
+.button-load {
   width: 100%;
   height: 10%;
   margin-top: 6rem;
   display: flex;
   justify-content: center;
 }
-.load-more{
+.load-more {
   padding: 10px 60px;
   border-radius: 20px;
   background-color: #000000;
-  color: #F6F6EC;
+  color: #f6f6ec;
   font-weight: 500;
   transition: 0.3s ease-in;
 }
-.load-more:hover{
+.load-more:hover {
   transform: translateY(-5px);
-  background-color: #F6F6EC;
+  background-color: #f6f6ec;
   border: 2px solid #000000;
   color: #000000;
   cursor: pointer;
 }
 /*Section Collection*/
-.collection{
+.collection {
   width: 100%;
   height: 100vh;
   margin-top: 10rem;
 }
-.collection-list{
+.collection-list {
   width: 100%;
   height: 100vh;
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
-.container-list1{
+.container-list1 {
   width: auto;
   height: auto;
 }
-.collection-item1{
+.collection-item1 {
   width: auto;
   height: auto;
 }
-.collection-item2{
+.collection-item2 {
   margin-top: 8rem;
   width: auto;
   height: auto;
 }
-.container-list2{
+.container-list2 {
   width: auto;
   height: auto;
 }
-.collection-item3{
+.collection-item3 {
   width: auto;
   height: auto;
 }
-.collection-item4{
+.collection-item4 {
   margin-top: 8rem;
   width: auto;
   height: auto;
 }
-.container-list3{
+.container-list3 {
   width: auto;
   height: auto;
 }
-.collection-item5{
+.collection-item5 {
   width: auto;
   height: auto;
 }
-.collection-item6{
+.collection-item6 {
   margin-top: 8rem;
   width: auto;
   height: auto;
 }
-/*Section Event*/
-.event{
+.event {
   width: 100%;
   height: 80vh;
-  background-color: #EEEDE0;
+  background-color: #eeede0;
 }
-.container{
+.container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.prices{
+.prices {
   width: 100%;
   height: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.list-prices{
+.list-prices {
   width: 100%;
   height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.content-prices{
+.content-prices {
   width: 100%;
   height: 100%;
   display: flex;
@@ -426,37 +425,37 @@ body {
   align-items: center;
 }
 
-.card-prices{
-  background-color: #2C2905;
+.card-prices {
+  background-color: #2c2905;
   color: white;
   width: 22rem;
   height: 13rem;
   border-radius: 20px;
   box-shadow: #00000080 10px 10px 8px;
 }
-.card-prices :hover{
+.card-prices :hover {
   cursor: pointer;
   transform: translateX(1px);
   opacity: 60%;
 }
-.content-card{
+.content-card {
   margin-left: 3rem;
 }
-.open-hours{
+.open-hours {
   width: 100%;
   height: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.list-open-hours{
+.list-open-hours {
   width: 100%;
   height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.content-open-hours{
+.content-open-hours {
   width: 100%;
   height: 100%;
   display: flex;
@@ -464,28 +463,26 @@ body {
   gap: 5rem;
   align-items: center;
 }
-.content-open-hours :hover{
+.content-open-hours :hover {
   cursor: pointer;
   transform: translateY(5px);
 }
-.card-time{
-  background-color: #2C2905;
+.card-time {
+  background-color: #2c2905;
   color: white;
   width: 25rem;
   height: 8rem;
   border-radius: 20px;
   box-shadow: #00000080 10px 10px 8px;
 }
-.card-time :hover{
+.card-time :hover {
   cursor: pointer;
   transform: translateX(2px);
   opacity: 60%;
 }
-.content-card-time{
+.content-card-time {
   margin-left: 3rem;
 }
-
-
 
 @keyframes img {
   from {

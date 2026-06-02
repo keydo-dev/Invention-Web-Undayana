@@ -1,293 +1,1010 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="bg-muzium-bg-light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muzium</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Muzium - Modern Art & History</title>
   </head>
-  <body>
-    <!--Area Navbar-->
-    <section class="hero" id="hero">
-      <nav class="navbar">
-        <div class="nav-item">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Exhibitions</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">About</a></li>
+  <body class="overflow-x-hidden text-neutral-900 antialiased">
+    <section
+      class="relative min-h-screen w-full bg-cover bg-center flex flex-col justify-between overflow-hidden"
+      style="background-image: url(&quot;./asset/homepage-background.png&quot;)"
+      id="hero"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60 z-0"
+      ></div>
+
+      <nav
+        class="fixed top-0 left-0 right-0 z-50 flex h-20 w-full items-center justify-between px-6 md:px-12 text-muzium-beige font-medium transition-all duration-500 backdrop-blur-md bg-black/10 border-b border-white/10"
+        id="main-nav"
+      >
+        <div class="hidden lg:block w-2/5">
+          <ul class="flex gap-8 tracking-wide text-sm font-semibold">
+            <li>
+              <a
+                href="#"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Home<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#exhibitions"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Exhibitions<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#collection"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Collection<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative py-2 group hover:text-white transition-colors"
+                >About<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
           </ul>
         </div>
-        <div class="area-logo">
-          <h1>Muzium</h1>
-        </div>
-        <div class="nav-items">
-          <ul>
-            <li><a href="#">Event</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="nav-visit">
-          <ul>
-            <li><a href="#">Visit</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="area-header">
-        <div class="sub-header">
-          <h5>September 8, 2024 - Oktober 28, 2024</h5>
-        </div>
-        <br />
-        <div class="header">
-          <h1>
-            Karya Agung Departemen Dari <br />
-           Cetakan dan Gambar
+
+        <div class="w-full lg:w-1/5 text-center select-none">
+          <h1
+            class="font-serif text-3xl font-black tracking-widest text-white drop-shadow-md bg-clip-text"
+          >
+            Muzium
           </h1>
         </div>
-        <a class="btn-more" href="#">Read More</a>
+
+        <div class="hidden lg:block w-1/3">
+          <ul
+            class="flex gap-8 justify-center tracking-wide text-sm font-semibold"
+          >
+            <li>
+              <a
+                href="#"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Event<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Blog<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Shop<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative py-2 group hover:text-white transition-colors"
+                >Contact<span
+                  class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-muzium-beige transition-all duration-300 group-hover:w-full group-hover:left-0"
+                ></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden lg:block">
+          <a
+            href="#"
+            class="relative border border-muzium-beige/60 px-7 py-2 rounded-full overflow-hidden group inline-block transition-all duration-300 hover:border-white shadow-inner"
+          >
+            <span
+              class="absolute inset-0 w-full h-full bg-muzium-beige scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"
+            ></span>
+            <span
+              class="relative z-10 transition-colors duration-300 group-hover:text-neutral-950 font-semibold tracking-wider text-sm"
+              >Visit</span
+            >
+          </a>
+        </div>
+      </nav>
+
+      <div
+        class="relative z-10 flex flex-col items-center justify-center text-center my-auto px-4 text-muzium-beige"
+      >
+        <div data-animate="hero-child" class="opacity-0">
+          <h5
+            class="font-serif text-sm md:text-base tracking-widest text-muzium-beige/80 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm mb-6 uppercase"
+          >
+            September 8, 2024 - Oktober 28, 2024
+          </h5>
+        </div>
+
+        <div data-animate="hero-child" class="opacity-0">
+          <h1
+            class="text-4xl md:text-7xl font-black font-sans leading-[1.15] max-w-5xl mb-10 text-white tracking-tight drop-shadow-2xl"
+          >
+            Karya Agung Departemen Dari <br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-muzium-beige via-white to-muzium-beige"
+              >Cetakan dan Gambar</span
+            >
+          </h1>
+        </div>
+
+        <div data-animate="hero-child" class="opacity-0">
+          <a
+            class="bg-muzium-beige text-neutral-900 px-12 py-4 rounded-full font-bold text-base shadow-xl tracking-wider transition-all duration-300 hover:scale-105 hover:bg-white hover:shadow-muzium-beige/20 hover:shadow-2xl"
+            href="#"
+          >
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="relative z-10 w-full flex justify-between px-12 py-6 text-xs text-white/40 tracking-widest font-mono hidden md:flex"
+      >
+        <span>[ AMSTERDAM / JAKARTA ]</span>
+        <span>EST. 2024</span>
       </div>
     </section>
-    <!--Header-->
-    <section class="about-muuseum" id="about-muuseum">
-      <div class="teks-bout">
-        <h1>
+
+    <section
+      class="w-full min-h-[85vh] bg-muzium-bg-gray flex flex-col-reverse lg:flex-row items-center justify-center px-6 md:px-20 py-16 gap-12"
+      id="about-muuseum"
+    >
+      <div class="w-full lg:w-1/2 space-y-6" data-animate="fade-right">
+        <h1
+          class="text-3xl md:text-5xl font-black text-neutral-900 font-sans leading-tight"
+        >
           Selamat Datang Di <br />Museum Seni dan Sejarah <br />
           Muzium
         </h1>
-        <br />
-        <p class="sub-info">
-          Tidak hanya kualitas koleksi yang luar biasa,<br />
-          tetapi juga tingkat aktivitas kami yang tinggi di bidang penelitian,<br />
-          pameran dan pendidikan menjamin Atemporală menonjol <br />
-          posisi yang menonjol dalam lanskap museum internasional.
+        <p class="text-neutral-500 font-serif text-lg leading-relaxed max-w-xl">
+          Tidak hanya kualitas koleksi yang luar biasa, tetapi juga tingkat
+          aktivitas kami yang tinggi di bidang penelitian, pameran dan
+          pendidikan menjamin Atemporală menonjol dalam lanskap museum
+          internasional.
         </p>
-        <br />
-        <br />
-        <p class="more-btn">More About &rarr;</p>
+        <p
+          class="inline-block font-extrabold text-lg cursor-pointer group hover:text-orange-500 transition-colors"
+        >
+          More About
+          <span
+            class="inline-block transition-transform group-hover:translate-x-2"
+            >&rarr;</span
+          >
+        </p>
       </div>
-      <div class="card-img">
-        <img src="asset/card-img.png" />
-      </div>
-    </section>
-    <!-- Container Item -->
-    <div class="container-item">
-      <!-- Content List -->
-      <div class="contain-list">
-        <!-- Section Exhibition -->
-        <section class="exhibitions" id="exhibitions">
-          <!-- Title Area -->
-          <div class="title-area">
-            <div class="text-title1">
-              <h1>Upcoming Exhibitions</h1>
-              <h5>VIEW ALL EXHIBITION</h5>
-            </div>
-            <div class="text-title2">
-              <p>&rarr;</p>
-            </div>
-          </div>
-          <!-- Exhibition List -->
-          <div class="exhibition-list">
-            <!-- Exhibition Item 1 -->
-            <div class="exhibition-item1">
-              <div class="exhibition-image1">
-                <img src="asset/img-pangeran-diponogoro.png" alt="" />
-              </div>
-              <div class="exhibition-content1">
-                <h2 style="margin-top: 2rem; font-size: 30px;">Penangkapan Pangeran Diponegoro</h2>
-                <br>
-                <span style="color: gray; font-weight: 500; font-size: 18px;">September 8, 2024 - October 28, 2024</span>
-                <p style="margin-top: 4rem; color: #91918C; font-weight: 500;">
-                  Penangkapan Pangeran Diponegoro adalah nama sebuah lukisan tahun 1857
-                  karya Raden Saleh tahun 1857, yang menggambarkan penangkapan Pangeran
-                  Diponegoro oleh Letnan Jenderal Hendrik Merkus de Kock pada tanggal 28
-                  Maret 1830.
-                </p>
-                <br>
-                <button class="button">MORE INFO</button>
-              </div>
-            </div>
-
-            <!-- Exhibition Item 2 -->
-            <div class="exhibition-item2">
-              <div class="exhibition-image2">
-                <img src="asset/img-wild-bull.png" alt="" />
-              </div>
-              <div class="exhibition-content2">
-                <h2 style="margin-top: 2rem; font-size: 30px;">Perburuan Banteng</h2>
-                <br>
-                <span style="color: gray; font-weight: 500; font-size: 18px;">September 8, 2024 - October 28, 2024</span>
-                <p style="margin-top: 4rem; color: #91918C; font-weight: 500;">
-                    Lukisan yang dikenal dengan nama “La Chasse au Taureau Sauvage” atau “Perburuan
-                    Perburuan Banteng Liar” adalah salah satu karya Raden Saleh yang paling terkenal. Ini adalah
-                    lukisan bertema perburuan yang menunjukkan konflik dramatis antara
-                    antara manusia dan binatang buas.
-                </p>
-                <br>
-                <button class="button">MORE INFO</button>
-              </div>
-            </div>
-
-    <!-- Exhibition Item 3 -->
-    <div class="exhibition-item3">
-        <div class="exhibition-image3">
+      <div class="w-full lg:w-1/2 flex justify-center" data-animate="fade-left">
+        <div class="overflow-hidden rounded-lg shadow-2xl max-w-md group">
           <img
-            src="asset/img-the-creation-ofadam.png"
-            alt="The Creation of Adam"/>
-              </div>
-              <div class="exhibition-content3">
-                <h2 style="margin-top: 2rem; font-size: 30px;">Penciptaan Adam</h2>
-                <br>
-                <span style="color: gray; font-weight: 500; font-size: 18px;">September 8, 2024 - October 28, 2024</span>
-                <p style="margin-top: 4rem; color: #91918C; font-weight: 500;">
-                  Penciptaan Adam, juga dikenal sebagai Penciptaan Manusia, adalah sebuah
-                  lukisan dinding karya seniman Italia Michelangelo, yang merupakan bagian dari
-                  langit-langit Kapel Sistina, yang dilukis sekitar tahun 1508-1512. Lukisan ini mengilustrasikan
-                  narasi penciptaan Alkitab dari Kitab Kejadian di mana
-                  Tuhan memberikan kehidupan kepada Adam, manusia pertama.
-                </p>
-                <br>
-                <button class="button">MORE INFO</button>
-              </div>
+            src="asset/card-img.png"
+            alt="Museum Building"
+            class="w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
         </div>
       </div>
-     <div class="button-load">
-            <button class="load-more">LOAD MORE</button>
-      </div>
     </section>
 
-    <!-- Section Collection -->
-    <section class="collection" id="collection">
-          <!-- Title Area -->
-          <div class="title-area">
-            <div class="text-title1">
-              <h1>Collection</h1>
-              <h5>VIEW ALL COLLECTION</h5>
-            </div>
-            <div class="text-title2">
-              <p>&rarr;</p>
-            </div>
-          </div>
-          <!-- Collection List -->
-           <div class="collection-list">
-            <div class="container-list1">
-              <div class="collection-item1">
-                <img src="asset/Café terrace at night.png" alt="">
-                <h2 style="margin-top: 3rem;">Café terrace at night</h2>
-                <br>
-                <span style="color: #91918C;">Vincent Van Gogh, September 1888.</span>
-              </div>
-              <div class="collection-item2">
-                <img src="asset/mistress and maid.png" alt="">
-                <h2 style="margin-top: 3rem;">Mistress and Maid</h2>
-                <br>
-                <span style="color: #91918C;">Johannes Vermeer, 1666 - 1667.</span>
-              </div>
-            </div>
-            <div class="container-list2">
-              <div class="collection-item3">
-                <img src="asset/Country road in Provence by night.png" alt="">
-                <h2 style="margin-top: 3rem;">Country road in Provence by night</h2>
-                <br>
-                <span style="color: #91918C;">Vincent Van Gogh, May 1890.</span>
-              </div>
-              <div class="collection-item4">
-                <img src="asset/Autumn Trees, ca..png" alt="">
-                <h2 style="margin-top: 3rem;">Autumn Trees, ca.</h2>
-                <br>
-                <span style="color: #91918C;">Franklin Carmichael, 1920.</span>
-              </div>
-            </div>
-            <div class="container-list3">
-              <div class="collection-item5">
-                <img src="asset/The Death of General Wolfe.png" alt="">
-                <h2 style="margin-top: 3rem;">The Death of General Wolfe</h2>
-                <br>
-                <span style="color: #91918C;">Benjamin West, 1770.</span>
-              </div>
-              <div class="collection-item6">
-                <img src="asset/Going to Work.png" alt="">
-                <h2 style="margin-top: 3rem;">Going to Work</h2>
-                <br>
-                <span style="color: #91918C;">Jean-François Millet, French, 1851 - 1853.</span>
-              </div>
-             </div>
-            </div>
-      </section>
+    <div
+      class="w-full bg-muzium-dark text-muzium-beige py-3 border-y border-white/10 overflow-hidden select-none whitespace-nowrap flex text-xs tracking-[0.2em] font-mono uppercase"
+    >
+      <div class="animate-marquee flex gap-12 shrink-0">
+        <span>• Pameran Agung Raden Saleh 2024</span>
+        <span>• Arsip Seni Rupa Kontemporer</span>
+        <span>• Jam Buka: Selasa - Minggu (10.00 - 17.00)</span>
+        <span>• Lestarikan Sejarah Melalui Seni</span>
+      </div>
+      <div class="animate-marquee flex gap-12 shrink-0" aria-hidden="true">
+        <span>• Pameran Agung Raden Saleh 2024</span>
+        <span>• Arsip Seni Rupa Kontemporer</span>
+        <span>• Jam Buka: Selasa - Minggu (10.00 - 17.00)</span>
+        <span>• Lestarikan Sejarah Melalui Seni</span>
       </div>
     </div>
 
-    <!-- Section Event -->
-    <section class="event" id="event">
-      <div class="container">
-        <!-- Title Prices -->
-        <div class="prices">
-          <div class="title-price">
-            <h1 style="font-size: 45px; color: #2C2905;">Harga Tiket Masuk</h1>
+    <section
+      class="w-full bg-muzium-bg-light py-20 border-y border-neutral-900/10 flex flex-col items-center justify-center text-center px-6"
+      data-animate="scroll-fade"
+    >
+      <span class="text-4xl text-neutral-300 font-serif mb-4">“</span>
+      <h2
+        class="font-serif text-2xl md:text-4xl italic text-neutral-800 max-w-3xl leading-relaxed"
+      >
+        "Seni tidak merubah apa-apa, seni hanya mengubah cara pandang seseorang
+        terhadap dunianya."
+      </h2>
+      <div class="w-8 h-[1px] bg-neutral-400 my-6"></div>
+      <p
+        class="text-xs tracking-widest text-neutral-500 font-sans uppercase font-semibold"
+      >
+        — Raden Saleh, 1811 - 1880
+      </p>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
+      <section
+        class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-b border-neutral-900/20"
+        data-animate="scroll-fade"
+      >
+        <div class="text-center space-y-1">
+          <h1
+            class="font-serif text-4xl md:text-6xl font-normal text-muzium-dark"
+          >
+            1857
+          </h1>
+          <p
+            class="text-xs tracking-widest text-neutral-500 uppercase font-sans"
+          >
+            Koleksi Pertama
+          </p>
+        </div>
+        <div class="text-center space-y-1 border-l border-neutral-300">
+          <h1
+            class="font-serif text-4xl md:text-6xl font-normal text-muzium-dark"
+          >
+            12.5k+
+          </h1>
+          <p
+            class="text-xs tracking-widest text-neutral-500 uppercase font-sans"
+          >
+            Arsip Digital
+          </p>
+        </div>
+        <div class="text-center space-y-1 border-l border-neutral-300">
+          <h1
+            class="font-serif text-4xl md:text-6xl font-normal text-muzium-dark"
+          >
+            40+
+          </h1>
+          <p
+            class="text-xs tracking-widest text-neutral-500 uppercase font-sans"
+          >
+            Kurator Ahli
+          </p>
+        </div>
+        <div class="text-center space-y-1 border-l border-neutral-300">
+          <h1
+            class="font-serif text-4xl md:text-6xl font-normal text-muzium-dark"
+          >
+            04
+          </h1>
+          <p
+            class="text-xs tracking-widest text-neutral-500 uppercase font-sans"
+          >
+            Galeri Sayap
+          </p>
+        </div>
+      </section>
+
+      <section class="w-full py-4" data-animate="scroll-fade">
+        <div
+          class="bg-[#EAE8D9] border border-neutral-900/10 p-8 md:p-12 rounded-sm relative overflow-hidden shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center"
+        >
+          <div
+            class="absolute -top-6 -right-6 font-mono text-7xl font-bold text-neutral-900/5 select-none pointer-events-none rotate-12"
+          >
+            REG.0857
+          </div>
+          <div
+            class="font-serif text-6xl text-neutral-400/60 select-none italic self-start"
+          >
+            M.
+          </div>
+          <div class="space-y-4">
+            <span
+              class="text-xs font-mono tracking-widest text-neutral-500 uppercase block"
+              >— Catatan Kurator</span
+            >
+            <h2
+              class="font-serif text-xl md:text-2xl font-bold text-neutral-800 leading-snug"
+            >
+              "Setiap goresan kuas di atas kanvas abad ke-19 adalah saksi bisu
+              pergolakan zaman yang melampaui usia peradaban manusia itu
+              sendiri."
+            </h2>
+            <p
+              class="text-sm text-neutral-500 leading-relaxed font-serif italic"
+            >
+              Koleksi yang kami kurasi tahun ini berfokus pada transisi teknik
+              pencahayaan romantisisme Eropa yang dibawa pulang oleh para
+              maestro nusantara, menciptakan dialog visual yang unik dan penuh
+              melankolia.
+            </p>
           </div>
         </div>
-        <!-- List Prices -->
-        <div class="list-prices">
-          <div class="content-prices">
-            <div class="card-prices">
-              <div class="content-card">
-                <br>
-                <h2>Child</h3>
-                <h5 style="font-weight: 380; font-style: italic;">3-12</h5>
-                <h1 style="font-size: 45px;">117.000 IDR</h1>
-                <br>
-                <h5 style="font-weight: 380; font-style: italic;">Dapatkan diskon meriah pada tanggal 5 September hingga selesai</h5>
+      </section>
+
+      <section id="exhibitions" class="space-y-16">
+        <div class="flex justify-between items-end pb-4 relative">
+          <div>
+            <h1
+              class="text-3xl md:text-5xl font-bold font-sans tracking-tight text-neutral-900"
+            >
+              Upcoming Exhibitions
+            </h1>
+            <h5
+              class="text-xs font-semibold tracking-widest text-neutral-500 mt-2"
+            >
+              VIEW ALL EXHIBITION
+            </h5>
+          </div>
+          <span
+            class="text-3xl cursor-pointer hover:translate-x-2 transition-transform duration-300"
+            >&rarr;</span
+          >
+          <div
+            class="absolute bottom-0 left-0 w-full flex flex-col gap-[2px] pointer-events-none"
+          >
+            <div class="w-full h-[2px] bg-neutral-900"></div>
+            <div class="w-full h-[1px] bg-neutral-900/40"></div>
+          </div>
+        </div>
+
+        <div class="space-y-24">
+          <div
+            class="w-full py-4 border-b border-neutral-900/10 pb-16"
+            data-animate="scroll-fade"
+          >
+            <div
+              class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16"
+            >
+              <div class="w-full lg:w-1/2 relative group">
+                <div
+                  class="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-neutral-900/30 group-hover:border-neutral-900 transition-colors duration-500"
+                ></div>
+                <div
+                  class="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-neutral-900/30 group-hover:border-neutral-900 transition-colors duration-500"
+                ></div>
+                <span
+                  class="absolute top-4 left-4 z-10 bg-neutral-950 text-muzium-beige font-mono text-[10px] tracking-widest px-3 py-1 uppercase rounded-sm shadow-md"
+                  >Sorotan Utama</span
+                >
+                <div
+                  class="overflow-hidden bg-neutral-900 rounded-sm shadow-xl border border-neutral-300"
+                >
+                  <img
+                    src="asset/img-the-creation-ofadam.png"
+                    alt="The Creation of Adam"
+                    class="w-full h-[350px] md:h-[450px] object-cover object-center transition-all duration-1000 ease-out filter sepia-[20%] brightness-90 contrast-110 group-hover:filter-none group-hover:scale-105"
+                  />
+                </div>
+              </div>
+              <div
+                class="w-full lg:w-1/2 space-y-6 flex flex-col justify-center"
+              >
+                <div class="space-y-2">
+                  <span
+                    class="text-xs font-mono tracking-[0.2em] text-neutral-400 uppercase block"
+                    >Karya Abadi • Kapel Sistina</span
+                  >
+                  <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-neutral-900 leading-tight tracking-tight"
+                  >
+                    Il Divino:<br />Penciptaan Adam
+                  </h2>
+                </div>
+                <div class="w-20 h-[1px] bg-neutral-900/30"></div>
+                <p
+                  class="text-neutral-600 font-serif text-base leading-relaxed italic"
+                >
+                  "Sebuah representasi di mana spiritualitas transendental
+                  bertemu dengan anatomi Renaisans yang sempurna. Sentuhan jari
+                  yang tak pernah benar-benar bersentuhan, mengabadikan percikan
+                  kehidupan abadi."
+                </p>
+                <div
+                  class="grid grid-cols-2 gap-4 pt-4 border-t border-neutral-900/10 text-xs font-mono text-neutral-500"
+                >
+                  <div>
+                    <p class="text-neutral-400 uppercase tracking-wider">
+                      Seniman
+                    </p>
+                    <p class="font-bold text-neutral-800 mt-0.5">
+                      Michelangelo Buonarroti
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-neutral-400 uppercase tracking-wider">
+                      Tahun Pembuatan
+                    </p>
+                    <p class="font-bold text-neutral-800 mt-0.5">
+                      ± 1508 – 1512
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <a
+                    href="#exhibitions"
+                    class="inline-flex items-center gap-3 text-sm font-bold tracking-widest uppercase text-neutral-900 group transition-colors hover:text-orange-600"
+                  >
+                    <span>Pelajari Analisis Karya</span>
+                    <span
+                      class="transform transition-transform duration-300 group-hover:translate-x-2"
+                      >&rarr;</span
+                    >
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="card-prices">
-              <div class="content-card">
-                <br>
-                <h2>Youth</h3>
-                <h5 style="font-weight: 380; font-style: italic;">13-17</h5>
-                <h1 style="font-size: 45px;">176.000 IDR</h1>
-                <br>
-                <h5 style="font-weight: 380; font-style: italic;">Dapatkan diskon meriah pada tanggal 5 September hingga selesai</h5>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-stretch border-b border-neutral-300/60 pb-16"
+            data-animate="scroll-fade"
+          >
+            <div
+              class="w-full lg:w-5/12 group cursor-pointer relative bg-[#EAE8D9] p-3 rounded-sm border border-neutral-300/50 shadow-sm"
+            >
+              <div
+                class="absolute top-6 left-6 z-10 font-mono text-xs text-neutral-400"
+              >
+                CATALOGUE NO. 01
+              </div>
+              <div class="overflow-hidden w-full h-full rounded-sm">
+                <img
+                  src="asset/img-pangeran-diponogoro.png"
+                  class="w-full h-64 md:h-80 object-cover transition-all duration-700 filter sepia-[30%] brightness-95 group-hover:filter-none group-hover:scale-105"
+                  alt="Penangkapan Pangeran Diponegoro"
+                />
               </div>
             </div>
-            <div class="card-prices">
-              <div class="content-card">
-                <br>
-                <h2>Adults</h3>
-                <h5 style="font-weight: 380; font-style: italic;">18+</h5>
-                <h1 style="font-size: 45px;">220,000 IDR</h1>
-                <br>
-                <h5 style="font-weight: 380; font-style: italic;">Dapatkan diskon meriah pada tanggal 5 September hingga selesai</h5>
+            <div class="w-full lg:w-7/12 flex flex-col justify-between py-2">
+              <div class="space-y-4">
+                <span
+                  class="text-neutral-400 font-mono font-medium text-xs uppercase tracking-widest"
+                  >🍂 September 8, 2024 - October 28, 2024</span
+                >
+                <h2
+                  class="text-2xl md:text-3xl font-serif font-bold text-neutral-900 leading-tight"
+                >
+                  Penangkapan Pangeran Diponegoro
+                </h2>
+                <p
+                  class="text-neutral-500 font-serif text-sm md:text-base leading-relaxed pt-2"
+                >
+                  Penangkapan Pangeran Diponegoro adalah nama sebuah lukisan
+                  tahun 1857 karya Raden Saleh, yang menggambarkan penangkapan
+                  Pangeran Diponegoro oleh Letnan Jenderal Hendrik Merkus de
+                  Kock pada tanggal 28 Maret 1830. Karya ini merefleksikan
+                  dramatisasi historis yang mendalam.
+                </p>
+              </div>
+              <div class="pt-6">
+                <button
+                  class="group inline-flex items-center gap-4 border border-neutral-900 text-neutral-900 font-mono text-xs tracking-widest px-8 py-3 rounded-sm transition-all duration-300 hover:bg-neutral-900 hover:text-white uppercase"
+                >
+                  <span>More Info</span>
+                  <span
+                    class="transform transition-transform duration-300 group-hover:translate-x-1"
+                    >&rarr;</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-stretch border-b border-neutral-300/60 pb-16"
+            data-animate="scroll-fade"
+          >
+            <div
+              class="w-full lg:w-5/12 group cursor-pointer relative bg-[#EAE8D9] p-3 rounded-sm border border-neutral-300/50 shadow-sm"
+            >
+              <div
+                class="absolute top-6 left-6 z-10 font-mono text-xs text-neutral-400"
+              >
+                CATALOGUE NO. 02
+              </div>
+              <div class="overflow-hidden w-full h-full rounded-sm">
+                <img
+                  src="asset/img-wild-bull.png"
+                  class="w-full h-64 md:h-80 object-cover transition-all duration-700 filter sepia-[30%] brightness-95 group-hover:filter-none group-hover:scale-105"
+                  alt="Perburuan Banteng"
+                />
+              </div>
+            </div>
+            <div class="w-full lg:w-7/12 flex flex-col justify-between py-2">
+              <div class="space-y-4">
+                <span
+                  class="text-neutral-400 font-mono font-medium text-xs uppercase tracking-widest"
+                  >🍂 September 8, 2024 - October 28, 2024</span
+                >
+                <h2
+                  class="text-2xl md:text-3xl font-serif font-bold text-neutral-900 leading-tight"
+                >
+                  Perburuan Banteng (La Chasse au Taureau Sauvage)
+                </h2>
+                <p
+                  class="text-neutral-500 font-serif text-sm md:text-base leading-relaxed pt-2"
+                >
+                  Lukisan yang legendaris karya Raden Saleh ini menunjukkan
+                  konflik emosional yang dramatis antara manusia dan binatang
+                  buas di alam liar. Gaya romantisisme yang kuat terpancar dari
+                  presisi anatomi dinamis dan saturasi warna yang mencekam.
+                </p>
+              </div>
+              <div class="pt-6">
+                <button
+                  class="group inline-flex items-center gap-4 border border-neutral-900 text-neutral-900 font-mono text-xs tracking-widest px-8 py-3 rounded-sm transition-all duration-300 hover:bg-neutral-900 hover:text-white uppercase"
+                >
+                  <span>More Info</span>
+                  <span
+                    class="transform transition-transform duration-300 group-hover:translate-x-1"
+                    >&rarr;</span
+                  >
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <!-- Title Open Hours -->
-        <div class="open-hours">
-          <div class="title-open-hours">
-            <h1 style="font-size: 45px; color: #2C2905;">Jam Buka</h1>
+
+        <div class="flex justify-center pt-8">
+          <button
+            class="bg-neutral-900 text-muzium-bg-light px-16 py-3.5 rounded-sm font-mono text-xs tracking-widest font-bold border border-neutral-900 transition-all duration-300 hover:bg-transparent hover:text-neutral-900"
+          >
+            LOAD MORE ARCHIVES
+          </button>
+        </div>
+      </section>
+
+      <section id="collection" class="space-y-12 py-12">
+        <div class="flex justify-between items-end pb-4 relative">
+          <div>
+            <h1
+              class="text-3xl md:text-5xl font-bold font-sans tracking-tight text-neutral-900"
+            >
+              Collection
+            </h1>
+            <h5
+              class="text-xs font-semibold tracking-widest text-neutral-500 mt-2"
+            >
+              VIEW ALL COLLECTION
+            </h5>
+          </div>
+          <span
+            class="text-3xl cursor-pointer hover:translate-x-2 transition-transform duration-300"
+            >&rarr;</span
+          >
+          <div
+            class="absolute bottom-0 left-0 w-full flex flex-col gap-[2px] pointer-events-none"
+          >
+            <div class="w-full h-[2px] bg-neutral-900"></div>
+            <div class="w-full h-[1px] bg-neutral-900/40"></div>
           </div>
         </div>
-        <!-- List Open Hours -->
-        <div class="list-open-hours">
-          <div class="content-open-hours">
-            <div class="card-time">
-              <div class="content-card-time">
-                <br>
-                <h2>Selasa - Sabtu</h3>
-                <h1 style="font-size: 45px;">10 a.m - 5 p.m</h1>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start"
+        >
+          <div class="md:col-span-4 space-y-12" data-animate="scroll-fade">
+            <div class="group cursor-pointer relative">
+              <div
+                class="overflow-hidden rounded-sm bg-neutral-900 border border-neutral-300 shadow-md"
+              >
+                <img
+                  src="/asset/Café-terrace-at-night.png"
+                  class="w-full object-cover transition-all duration-700 ease-out filter sepia brightness-90 contrast-125 saturate-50 group-hover:filter-none group-hover:scale-105"
+                  alt="Café terrace at night"
+                />
+              </div>
+              <div
+                class="mt-4 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <h2 class="text-xl font-bold font-sans text-neutral-800">
+                  Café terrace at night
+                </h2>
+                <p class="text-neutral-500 font-serif text-sm italic mt-1">
+                  Vincent Van Gogh, September 1888.
+                </p>
               </div>
             </div>
-            <div class="card-time">
-              <div class="content-card-time">
-                <br>
-                <h2>Minggu</h3>
-                <h1 style="font-size: 45px;">11 a.m - 5 p.m</h1>
+            <div class="group cursor-pointer relative md:pl-6">
+              <div
+                class="overflow-hidden rounded-sm bg-neutral-900 border border-neutral-300 shadow-md"
+              >
+                <img
+                  src="/asset/mistress and maid.png"
+                  class="w-full object-cover transition-all duration-700 ease-out filter sepia brightness-90 contrast-125 saturate-50 group-hover:filter-none group-hover:scale-105"
+                  alt="Mistress and Maid"
+                />
+              </div>
+              <div
+                class="mt-4 md:pl-0 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <h2 class="text-xl font-bold font-sans text-neutral-800">
+                  Mistress and Maid
+                </h2>
+                <p class="text-neutral-500 font-serif text-sm italic mt-1">
+                  Johannes Vermeer, 1666 - 1667.
+                </p>
               </div>
             </div>
           </div>
+
+          <div
+            class="md:col-span-4 space-y-12 md:mt-24"
+            data-animate="scroll-fade"
+          >
+            <div class="group cursor-pointer relative">
+              <div
+                class="overflow-hidden rounded-sm bg-neutral-900 border border-neutral-300 shadow-md"
+              >
+                <img
+                  src="/asset/Country road in Provence by night.png"
+                  class="w-full object-cover transition-all duration-700 ease-out filter sepia brightness-90 contrast-125 saturate-50 group-hover:filter-none group-hover:scale-105"
+                  alt="Country road in Provence by night"
+                />
+              </div>
+              <div
+                class="mt-4 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <h2 class="text-xl font-bold font-sans text-neutral-800">
+                  Country road in Provence by night
+                </h2>
+                <p class="text-neutral-500 font-serif text-sm italic mt-1">
+                  Vincent Van Gogh, May 1890.
+                </p>
+              </div>
+            </div>
+            <div class="group cursor-pointer relative md:pr-4">
+              <div
+                class="overflow-hidden rounded-sm bg-neutral-900 border border-neutral-300 shadow-md"
+              >
+                <img
+                  src="/asset/Autumn Trees, ca..png"
+                  class="w-full object-cover transition-all duration-700 ease-out filter sepia brightness-90 contrast-125 saturate-50 group-hover:filter-none group-hover:scale-105"
+                  alt="Autumn Trees, ca."
+                />
+              </div>
+              <div
+                class="mt-4 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <h2 class="text-xl font-bold font-sans text-neutral-800">
+                  Autumn Trees, ca.
+                </h2>
+                <p class="text-neutral-500 font-serif text-sm italic mt-1">
+                  Franklin Carmichael, 1920.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="md:col-span-4 space-y-12 md:-mt-12"
+            data-animate="scroll-fade"
+          >
+            <div class="group cursor-pointer relative">
+              <div
+                class="overflow-hidden rounded-sm bg-neutral-900 border border-neutral-300 shadow-md"
+              >
+                <img
+                  src="/asset/The Death of General Wolfe.png"
+                  class="w-full object-cover transition-all duration-700 ease-out filter sepia brightness-90 contrast-125 saturate-50 group-hover:filter-none group-hover:scale-105"
+                  alt="The Death of General Wolfe"
+                />
+              </div>
+              <div
+                class="mt-4 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <h2 class="text-xl font-bold font-sans text-neutral-800">
+                  The Death of General Wolfe
+                </h2>
+                <p class="text-neutral-500 font-serif text-sm italic mt-1">
+                  Benjamin West, 1770.
+                </p>
+              </div>
+            </div>
+            <div class="group cursor-pointer relative">
+              <div
+                class="overflow-hidden rounded-sm bg-neutral-900 border border-neutral-300 shadow-md"
+              >
+                <img
+                  src="/asset/Going to Work.png"
+                  class="w-full object-cover transition-all duration-700 ease-out filter sepia brightness-90 contrast-125 saturate-50 group-hover:filter-none group-hover:scale-105"
+                  alt="Going to Work"
+                />
+              </div>
+              <div
+                class="mt-4 transition-all duration-300 group-hover:translate-x-1"
+              >
+                <h2 class="text-xl font-bold font-sans text-neutral-800">
+                  Going to Work
+                </h2>
+                <p class="text-neutral-500 font-serif text-sm italic mt-1">
+                  Jean-François Millet, 1851 - 1853.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="w-full bg-muzium-bg-gray pt-24" id="event">
+      <div class="max-w-6xl mx-auto px-6 space-y-24 pb-24">
+        <div class="text-center space-y-12">
+          <div class="space-y-2">
+            <h1
+              class="text-3xl md:text-5xl font-black text-muzium-dark font-sans tracking-tight"
+            >
+              Harga Tiket Masuk
+            </h1>
+            <div
+              class="w-24 h-[3px] bg-muzium-dark mx-auto rounded-full opacity-60"
+            ></div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center"
+          >
+            <div
+              class="group relative bg-muzium-dark text-muzium-beige p-8 rounded-2xl shadow-xl transition-all duration-500 hover:-translate-y-2 hover:bg-neutral-900 border border-transparent hover:border-muzium-beige/20"
+              data-animate="scroll-fade"
+            >
+              <div class="absolute top-4 right-4 text-xs opacity-20 font-mono">
+                01
+              </div>
+              <h2 class="text-xl font-bold font-sans tracking-wide">Child</h2>
+              <h5 class="text-xs font-serif italic opacity-60 mt-1 mb-6">
+                3 - 12 Tahun
+              </h5>
+              <h1
+                class="text-3xl font-black text-white tracking-tight my-4 group-hover:scale-105 transition-transform duration-300"
+              >
+                117.000 IDR
+              </h1>
+              <div class="w-full h-[1px] bg-muzium-beige/20 my-4"></div>
+              <p class="text-xs text-muzium-beige/70 leading-relaxed italic">
+                Dapatkan diskon meriah pada tanggal 5 September hingga selesai.
+              </p>
+            </div>
+
+            <div
+              class="group relative bg-neutral-900 text-muzium-beige p-10 rounded-2xl shadow-2xl transition-all duration-500 hover:-translate-y-3 border-2 border-muzium-beige/40 scale-105 md:z-10"
+              data-animate="scroll-fade"
+            >
+              <div
+                class="absolute -top-3 left-1/2 -translate-x-1/2 bg-muzium-beige text-neutral-900 text-[10px] font-bold tracking-widest px-4 py-1 rounded-full uppercase shadow-md"
+              >
+                Paling Populer
+              </div>
+              <div class="absolute top-4 right-4 text-xs opacity-20 font-mono">
+                02
+              </div>
+              <h2
+                class="text-2xl font-black font-sans tracking-wide text-white"
+              >
+                Youth
+              </h2>
+              <h5 class="text-xs font-serif italic opacity-70 mt-1 mb-6">
+                13 - 17 Tahun
+              </h5>
+              <h1
+                class="text-4xl font-black text-white tracking-tight my-4 text-transparent bg-clip-text bg-gradient-to-r from-muzium-beige to-white"
+              >
+                176.000 IDR
+              </h1>
+              <div class="w-full h-[1px] bg-muzium-beige/20 my-4"></div>
+              <p class="text-xs text-muzium-beige/80 leading-relaxed italic">
+                Dapatkan diskon meriah pada tanggal 5 September hingga selesai.
+              </p>
+            </div>
+
+            <div
+              class="group relative bg-muzium-dark text-muzium-beige p-8 rounded-2xl shadow-xl transition-all duration-500 hover:-translate-y-2 hover:bg-neutral-900 border border-transparent hover:border-muzium-beige/20"
+              data-animate="scroll-fade"
+            >
+              <div class="absolute top-4 right-4 text-xs opacity-20 font-mono">
+                03
+              </div>
+              <h2 class="text-xl font-bold font-sans tracking-wide">Adults</h2>
+              <h5 class="text-xs font-serif italic opacity-60 mt-1 mb-6">
+                18+ Tahun
+              </h5>
+              <h1
+                class="text-3xl font-black text-white tracking-tight my-4 group-hover:scale-105 transition-transform duration-300"
+              >
+                220.000 IDR
+              </h1>
+              <div class="w-full h-[1px] bg-muzium-beige/20 my-4"></div>
+              <p class="text-xs text-muzium-beige/70 leading-relaxed italic">
+                Dapatkan diskon meriah pada tanggal 5 September hingga selesai.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center space-y-12 pt-8">
+          <div class="space-y-2">
+            <h1
+              class="text-3xl md:text-4xl font-bold text-muzium-dark font-sans tracking-tight"
+            >
+              Jam Operasional
+            </h1>
+            <div
+              class="w-16 h-[2px] bg-muzium-dark mx-auto rounded-full opacity-40"
+            ></div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-6 max-w-4xl mx-auto"
+          >
+            <div
+              class="flex items-center justify-between bg-white border border-neutral-300/60 p-5 w-full rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+              data-animate="scroll-fade"
+            >
+              <div class="flex items-center gap-4 text-left">
+                <span class="text-xl">📅</span>
+                <div>
+                  <h3 class="font-bold text-neutral-800 font-sans">
+                    Selasa - Sabtu
+                  </h3>
+                  <p class="text-xs text-neutral-400 font-serif italic">
+                    Hari Kerja Reguler
+                  </p>
+                </div>
+              </div>
+              <h1
+                class="text-xl md:text-2xl font-black text-muzium-dark font-sans"
+              >
+                10.00 - 17.00
+              </h1>
+            </div>
+
+            <div
+              class="flex items-center justify-between bg-white border border-neutral-300/60 p-5 w-full rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+              data-animate="scroll-fade"
+            >
+              <div class="flex items-center gap-4 text-left">
+                <span class="text-xl">✨</span>
+                <div>
+                  <h3 class="font-bold text-neutral-800 font-sans">Minggu</h3>
+                  <p class="text-xs text-neutral-400 font-serif italic">
+                    Akhir Pekan
+                  </p>
+                </div>
+              </div>
+              <h1
+                class="text-xl md:text-2xl font-black text-muzium-dark font-sans"
+              >
+                11.00 - 17.00
+              </h1>
+            </div>
+          </div>
+
+          <p
+            class="text-xs text-neutral-400 font-serif italic max-w-md mx-auto"
+          >
+            * Catatan: Museum tutup setiap hari Senin dan hari libur nasional
+            resmi.
+          </p>
         </div>
       </div>
+
+      <footer
+        class="w-full bg-neutral-950 text-neutral-400 font-sans pt-16 pb-8 border-t border-white/5"
+      >
+        <div
+          class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-white/10"
+        >
+          <div class="md:col-span-5 space-y-4">
+            <h1
+              class="font-serif text-3xl font-black tracking-widest text-white"
+            >
+              Muzium
+            </h1>
+            <p
+              class="text-sm leading-relaxed text-neutral-400 max-w-sm font-serif italic"
+            >
+              Menjembatani mahakarya masa lalu dengan apresiasi modern.
+              Destinasi ruang edukasi, seni rupa kontemporer, dan pelestarian
+              sejarah internasional.
+            </p>
+          </div>
+
+          <div class="md:col-span-4 space-y-4">
+            <h4 class="text-white text-xs font-bold tracking-widest uppercase">
+              Eksplorasi
+            </h4>
+            <ul class="grid grid-cols-2 gap-3 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-muzium-beige transition-colors duration-300"
+                  >&rarr; Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#exhibitions"
+                  class="hover:text-muzium-beige transition-colors duration-300"
+                  >&rarr; Pameran</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#collection"
+                  class="hover:text-muzium-beige transition-colors duration-300"
+                  >&rarr; Koleksi Seni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-muzium-beige transition-colors duration-300"
+                  >&rarr; Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-muzium-beige transition-colors duration-300"
+                  >&rarr; Tiket & Kunjungan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-muzium-beige transition-colors duration-300"
+                  >&rarr; Hubungi Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-3 space-y-4">
+            <h4 class="text-white text-xs font-bold tracking-widest uppercase">
+              Koneksi
+            </h4>
+            <p class="text-sm text-neutral-400 font-mono">halo@muzium.org</p>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+              Kawasan Kota Tua, Jakarta Timur,<br />Indonesia
+            </p>
+            <div class="flex gap-4 pt-2 text-sm">
+              <a href="#" class="hover:text-white transition-colors"
+                >Instagram</a
+              >
+              <span class="text-neutral-700">/</span>
+              <a href="#" class="hover:text-white transition-colors">Twitter</a>
+              <span class="text-neutral-700">/</span>
+              <a href="#" class="hover:text-white transition-colors">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="max-w-6xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-600 gap-4"
+        >
+          <p>&copy; 2026 Muzium Art & History. Seluruh Hak Cipta Dilindungi.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:underline">Kebijakan Privasi</a>
+            <a href="#" class="hover:underline">Syarat & Ketentuan</a>
+          </div>
+        </div>
+      </footer>
     </section>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
